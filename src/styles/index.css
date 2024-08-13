@@ -1,12 +1,38 @@
+body {
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHyPp6gBk5KWZ-A-JX5CQVr8zeZZQNuyl3kg&s');
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
 
-/* 
+.content{
+    display:flex;
+    justify-content:center;
+    width:50%;
+    background-color: white;
+    flex-direction:column;
+    margin:1vw 2vw 0 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.input,.todo {
+    width:100%;
+}
 
-*/
+.todoComplete:hover{
+    background-color: rgb(226, 220, 220);
+
+}
+
+.todo:hover + .delete,.delete:hover{
+    background-color: rgb(226, 220, 220);
+    display: block;
+}
+
+.delete {
+    justify-content:center;
+    color:red;
+    margin:0.5vw 2vw 0 0;
+    display: none;
+    height: 100%;
+}
