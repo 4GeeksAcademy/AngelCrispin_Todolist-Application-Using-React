@@ -5,7 +5,7 @@ import ToDoList from './todolist.jsx'
 const Home = () => {
 	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">TO DOS</h1>
+			<h1 className="text-center mt-5">todos</h1>
 			<ToDoList/>
 		</div>
 	);

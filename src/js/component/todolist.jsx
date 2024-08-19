@@ -37,11 +37,13 @@ export default function ToDoList () {
               {allTodos.map((x) => (
                     <div key={x.id} className="justify-content-between d-flex todoComplete">
                       <div className='todo'>{x.value}</div>
-                      <div className='delete'>
-                      <i key={x.id} className=" fa-solid fa-xmark" onClick={()=>deleteToDo(x.id)}></i>
-                       </div> 
+                      <i key={x.id} className=" fa-solid fa-xmark delete" onClick={()=>deleteToDo(x.id)}></i>
                     </div>
-              ))}    
+              ))}
+
+              {allTodos.length>0?<div className='description text-start'>{allTodos.length+" item left"}</div>:<div className='description text-center'>No tasks, add tasks</div>} 
+          
+                  
           </div>
         </div>)
 }
